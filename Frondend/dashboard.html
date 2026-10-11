@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Management System - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏦 Bank Management
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">Dashboard|</a>
+
+            <a href="customer.html">Customers|</a>
+
+            <a href="transaction.html">Transactions</a>
+
+            <button id="logoutBtn">Logout</button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+        <h1>Dashboard</h1>
+
+        <p>Welcome to your Bank Management System</p>
+
+
+        <!-- Dashboard Cards -->
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+
+                <h3>Total Customers</h3>
+
+                <h2 id="customerCount">0</h2>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Total Accounts</h3>
+
+                <h2 id="accountCount">0</h2>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Total Transactions</h3>
+
+                <h2 id="transactionCount">0</h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recent Transactions -->
+
+        <section class="section">
+
+            <h2>Recent Transactions</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="recentTransactions">
+
+                    <!-- JavaScript will add data here -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
